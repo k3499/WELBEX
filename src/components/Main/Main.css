@@ -1,0 +1,6 @@
+.Main {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 90px auto 0;
+}
