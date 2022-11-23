@@ -7,10 +7,10 @@ function Footer() {
         <div className="footer__block-about">
           <p className="footer__title">О компании</p>
           <ul className="footer__menu">
-            <li className="footer__menu-item">
+            <li className="footer__menu-item-about">
               <a href="#" className="footer__menu-link">Партнёрская программа</a>
             </li>
-            <li className="footer__menu-item">
+            <li className="footer__menu-item-about">
               <a href="#" className="footer__menu-link">Вакансии</a>
             </li>
           </ul>

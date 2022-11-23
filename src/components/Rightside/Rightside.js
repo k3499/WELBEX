@@ -3,7 +3,8 @@ import './Rightside.css';
 function Rightside() {
   return (
     <div className="rightside">
-      <p className="rightside__title">Вместе с <span className="rightside__title-important">бесплатной консультацией</span> мы дарим:</p>
+      <p className="rightside__title">Вместе с 
+      <span className="rightside__title-important-free">бесплатной </span><span className="rightside__title-important-talk">консультацией</span> мы дарим:</p>
       <div className="rightside__features-box">
         <div className="rightside__features-box-item">
           <strong className="rightside__features-box-title">Виджеты</strong>

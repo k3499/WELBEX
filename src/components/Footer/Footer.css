@@ -28,13 +28,11 @@
   padding: 0;
 }
 .footer__menu-link{
+  text-decoration: none;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
   color: #E4E5EA;
-  text-decoration: none;
 }
 .footer__address{
   font-family: 'Inter';
@@ -57,12 +55,16 @@
   max-width: 293px;
 }
 .footer__menu-list{
-  display: grid;
+  gap: 10px 53px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
   grid-auto-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 10px;
 }
-.footer__menu-item{
+.footer__menu-item, .footer__menu-item-about{
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__menu-item-about{
   margin-bottom: 10px;
 }
 .footer__menu-link-social{

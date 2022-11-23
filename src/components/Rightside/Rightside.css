@@ -12,7 +12,7 @@
   color: #E4E5EA;
   margin: 0;
 }
-.rightside__title-important{
+.rightside__title-important-free{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -21,7 +21,22 @@
   text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+  background: linear-gradient(90deg, #FCB045 0%, #FD1D1D 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.rightside__title-important-talk{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 190%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -69,6 +84,6 @@
   color: #E4E5EA;
   text-decoration: none;
   padding: 21px 35px;
-  display: block;
+  display: inline-block;
   margin-top: 61px;
 }
