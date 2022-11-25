@@ -52,6 +52,18 @@
     ". ."
     ". ."; 
 }
+.rightside__feature-wid::after{
+  content: 'Виджеты';
+}
+.rightside__feature-dash::after{
+  content: 'Dashboard';
+}
+.rightside__feature-skype::after{
+  content: 'Skype Аудит';
+}
+.rightside__feature-free::after{
+  content: '35 дней';
+}
 .rightside__features-box-title{
   font-family: 'Inter';
   font-style: normal;
@@ -86,4 +98,47 @@
   padding: 21px 35px;
   display: inline-block;
   margin-top: 61px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .rightside {
+    padding: 35px 14px 60px;
+  }
+  .rightside__title{
+    text-align: left;
+  }
+  .rightside__title-important-free, .rightside__title-important-talk{
+    text-transform: lowercase;
+  }
+  .rightside__features-box-subtitle, .rightside__button{
+    display: none;
+  }
+  .rightside__features-box{
+    text-align: left;
+    margin: 20px 0 0 0;
+    gap: 14px 10px;
+    grid-template-columns: auto auto;
+    justify-content: start;
+  }
+  .rightside__features-box-title {
+    text-align: right;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: url(../../images/Line.svg) no-repeat 0 50%;
+    text-indent: 20px;
+    padding: 0 0 0 15px;
+  }
+  .rightside__feature-wid::after{
+    content: 'Skype аудит';
+  }
+  .rightside__feature-dash::after{
+    content: '30 виджетов';
+  }
+  .rightside__feature-skype::after{
+    content: 'Dashboard';
+  }
+  .rightside__feature-free::after{
+    content: 'Месяц аmoCRM';
+  }
 }

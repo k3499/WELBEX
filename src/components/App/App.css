@@ -5,14 +5,21 @@
   min-height: 100vh;
   background: #0E1014;
 }
+.background__block{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .background__purple-light{
   position: absolute;
   width: 259px;
   height: 259px;
   left: 602px;
   top: -154px;
-  background: #833AB4;
-  opacity: 0.5;
+  background: rgba(131, 58, 180, 0.5);
   filter: blur(196px);
 }
 .background__purple-ball{
@@ -46,8 +53,7 @@
   height: 311px;
   left: -102px;
   top: 251px;
-  background: #961A1A;
-  opacity: 0.5;
+  background: rgba(150, 26, 26, 0.5);
   filter: blur(196px);
 }
 .background__red-ball-small{
@@ -61,4 +67,42 @@
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   filter: blur(2.5px);
   backdrop-filter: blur(2px);
+}
+@media screen and (min-width: 812px) and (max-width: 1170px) {
+  .background__purple-ball, .background__red-ball, .background__red-ball-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 811px) {
+  .background__purple-ball, .background__red-ball, .background__red-ball-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .background__purple-light{
+    left: 258px;
+    top: 150px;
+  }
+  .background__purple-ball{
+    left: 296px;
+    top: 310px;
+  }
+  .background__red-light{
+    left: -55px;
+    top: 241px;
+  }
+  .background__red-ball{
+    width: 43px;
+    height: 43px;
+    left: 29px;
+    top: 435px;
+  }
+  .background__red-ball-small{
+    display: none;
+  }
 }
